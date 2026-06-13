@@ -100,7 +100,7 @@ ${val('notes')}
 Submitted via FirmMatch SG`
     );
 
-    window.location.href = `mailto:kelsonchai12345@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hello.firmmatchsg@gmail.com?subject=${subject}&body=${body}`;
 
     setTimeout(() => showSuccess('clientForm', 'form-success'), 1000);
   });
@@ -146,7 +146,7 @@ ${val('firm_notes')}
 Submitted via FirmMatch SG`
     );
 
-    window.location.href = `mailto:kelsonchai12345@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hello.firmmatchsg@gmail.com?subject=${subject}&body=${body}`;
 
     setTimeout(() => showSuccess('partnerForm', 'partner-success'), 1000);
   });
