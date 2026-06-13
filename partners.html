@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partner Sign-Up — FirmMatch SG</title>
+  <meta name="description" content="Join FirmMatch SG as a partner accounting, bookkeeping or tax firm and receive qualified leads from Singapore SMEs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="logo-mark">F</span>FirmMatch <span class="logo-sg">SG</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#how">How It Works</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="partners.html">For Firms</a></li>
+        <li><a href="get-quotes.html" class="btn btn--nav">Get Free Quotes</a></li>
+      </ul>
+      <button class="nav__burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">For Accounting &amp; Bookkeeping Firms</span>
+      <h1>Partner with FirmMatch SG</h1>
+      <p>Receive qualified leads from Singapore SMEs actively looking for accounting, bookkeeping, tax and payroll services. No cold calling, no marketing spend.</p>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="services" style="padding: 64px 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Why Partner With Us</span>
+        <h2>Grow your client base with qualified leads</h2>
+      </div>
+      <div class="services__grid">
+        <div class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+          <h3>Qualified leads only</h3>
+          <p>Every enquiry comes from a real Singapore business actively seeking your services — pre-screened for service type, volume and urgency.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+          <h3>No marketing costs</h3>
+          <p>We handle the marketing and client acquisition. You focus on what you do best — serving clients and delivering quality work.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>You control your capacity</h3>
+          <p>Tell us your preferred client type, industry focus and current capacity. We only send leads that match your criteria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Form -->
+  <section class="form-section" style="background: var(--color-bg);">
+    <div class="container form-container">
+
+      <div class="form-sidebar">
+        <h3>Partner requirements</h3>
+        <ul class="about__list" style="margin-top:0;">
+          <li>Singapore-registered firm (UEN required)</li>
+          <li>At least 1 year in operation</li>
+          <li>Capacity to accept new SME clients</li>
+          <li>Responsive to leads within 2 business days</li>
+          <li>Agree to referral arrangement terms</li>
+        </ul>
+        <div class="sidebar-note" style="margin-top:24px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" width="18"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Audit firms: please indicate your PAE registration status. We verify all audit-related claims before activation.
+        </div>
+      </div>
+
+      <form class="enquiry-form" id="partnerForm">
+
+        <div class="form-section-block">
+          <h3 class="form-section-title"><span class="form-step-badge">1</span> Firm Profile</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firm_name">Firm Name <span class="req">*</span></label>
+              <input type="text" id="firm_name" name="firm_name" placeholder="ABC Accounting Pte Ltd" required />
+            </div>
+            <div class="form-group">
+              <label for="firm_uen">UEN <span class="req">*</span></label>
+              <input type="text" id="firm_uen" name="firm_uen" placeholder="202312345A" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firm_contact">Contact Person <span class="req">*</span></label>
+              <input type="text" id="firm_contact" name="firm_contact" placeholder="John Lim" required />
+            </div>
+            <div class="form-group">
+              <label for="firm_email">Email Address <span class="req">*</span></label>
+              <input type="email" id="firm_email" name="firm_email" placeholder="john@abcaccounting.com.sg" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firm_phone">Phone / WhatsApp <span class="req">*</span></label>
+              <input type="tel" id="firm_phone" name="firm_phone" placeholder="+65 6123 4567" required />
+            </div>
+            <div class="form-group">
+              <label for="firm_website">Website / LinkedIn <span class="optional-tag">optional</span></label>
+              <input type="url" id="firm_website" name="firm_website" placeholder="https://abcaccounting.com.sg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section-block">
+          <h3 class="form-section-title"><span class="form-step-badge">2</span> Services Offered <span class="req">*</span></h3>
+          <p class="form-hint">Select all services your firm provides.</p>
+          <div class="checkbox-grid">
+            <label class="checkbox-card"><input type="checkbox" name="firm_service" value="Bookkeeping" /><span>Bookkeeping</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="firm_service" value="GST Filing" /><span>GST Filing</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="firm_service" value="Corporate Tax" /><span>Corporate Tax</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="firm_service" value="Payroll" /><span>Payroll</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="firm_service" value="Unaudited FS" /><span>Unaudited Financial Statements</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="firm_service" value="Statutory Audit" /><span>Statutory Audit</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="firm_service" value="Corporate Secretarial" /><span>Corporate Secretarial</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="firm_service" value="Xero / QuickBooks" /><span>Xero / QuickBooks</span></label>
+          </div>
+        </div>
+
+        <div class="form-section-block">
+          <h3 class="form-section-title"><span class="form-step-badge">3</span> Fees &amp; Capacity</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="min_fee">Minimum Monthly Fee (bookkeeping)</label>
+              <select id="min_fee" name="min_fee">
+                <option value="">Select…</option>
+                <option>Below S$150/month</option>
+                <option>S$150–S$300/month</option>
+                <option>S$300–S$500/month</option>
+                <option>Above S$500/month</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="capacity">Can accept new clients now?</label>
+              <select id="capacity" name="capacity">
+                <option value="">Select…</option>
+                <option>Yes — actively looking</option>
+                <option>Yes — limited capacity</option>
+                <option>No — waitlist only</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="industry_focus">Industry Focus <span class="optional-tag">optional</span></label>
+            <input type="text" id="industry_focus" name="industry_focus" placeholder="e.g. F&B, Retail, Construction, IT startups" />
+          </div>
+        </div>
+
+        <div class="form-section-block">
+          <h3 class="form-section-title"><span class="form-step-badge">4</span> Audit &amp; Licence Status</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Licensed Public Accounting Firm (PAE)?</label>
+              <div class="radio-row">
+                <label class="radio-label"><input type="radio" name="pae" value="Yes" /> Yes</label>
+                <label class="radio-label"><input type="radio" name="pae" value="No" checked /> No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Do you provide Statutory Audit services?</label>
+              <div class="radio-row">
+                <label class="radio-label"><input type="radio" name="audit_service" value="Yes" /> Yes</label>
+                <label class="radio-label"><input type="radio" name="audit_service" value="No" checked /> No</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="firm_notes">Additional notes <span class="optional-tag">optional</span></label>
+            <textarea id="firm_notes" name="firm_notes" rows="3" placeholder="e.g. We specialise in F&B and retail SMEs. We are a Xero Gold Partner…"></textarea>
+          </div>
+        </div>
+
+        <div class="form-section-block consent-block">
+          <label class="consent-label">
+            <input type="checkbox" id="partner_consent" name="partner_consent" required />
+            <span>I confirm that the information provided is accurate and I agree to FirmMatch SG's referral arrangement and <a href="terms.html" target="_blank">Terms of Use</a>. <span class="req">*</span></span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full btn--lg">Submit Application →</button>
+        <p class="form-note">We'll review your application and reach out within 2 business days.</p>
+
+        <div id="partner-success" class="form-success" style="display:none">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Application received!</h3>
+          <p>Thank you for your interest. We'll review your application and contact you within 2 business days.</p>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="nav__logo footer__logo">
+        <span class="logo-mark">F</span>FirmMatch <span class="logo-sg">SG</span>
+      </a>
+      <p class="footer__copy">&copy; 2026 FirmMatch SG &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Use</a></p>
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="get-quotes.html">Get Quotes</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

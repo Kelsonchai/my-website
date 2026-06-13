@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FirmMatch SG — Find the Right Accounting Firm in Singapore</title>
-  <meta name="description" content="Compare bookkeeping, GST, tax, payroll and audit service providers for your Singapore business. Get matched in minutes." />
+  <meta name="description" content="Compare bookkeeping, GST, tax, payroll and audit service providers for your Singapore SME. Get up to 3 free quotes." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,14 +15,15 @@
   <!-- NAV -->
   <nav class="nav">
     <div class="container nav__inner">
-      <a href="#" class="nav__logo">
+      <a href="index.html" class="nav__logo">
         <span class="logo-mark">F</span>FirmMatch <span class="logo-sg">SG</span>
       </a>
       <ul class="nav__links">
         <li><a href="#services">Services</a></li>
         <li><a href="#how">How It Works</a></li>
-        <li><a href="#why">Why Us</a></li>
-        <li><a href="#quote" class="btn btn--nav">Get Free Quotes</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="partners.html">For Firms</a></li>
+        <li><a href="get-quotes.html" class="btn btn--nav">Get Free Quotes</a></li>
       </ul>
       <button class="nav__burger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -44,7 +45,7 @@
         bookkeeping, tax and payroll service providers in Singapore — for free.
       </p>
       <div class="hero__cta">
-        <a href="#quote" class="btn btn--primary">Get Free Quotes</a>
+        <a href="get-quotes.html" class="btn btn--primary">Get 3 Free Quotes →</a>
         <a href="#how" class="btn btn--ghost">See How It Works</a>
       </div>
       <div class="hero__trust">
@@ -54,11 +55,45 @@
           <span>GST Filing</span>
           <span>Corporate Tax</span>
           <span>Payroll</span>
-          <span>Audit</span>
+          <span>Audit Referral</span>
+          <span>Corp Secretarial</span>
         </div>
       </div>
     </div>
     <div class="hero__bg-shape"></div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">How It Works</span>
+        <h2>Three steps to your ideal firm</h2>
+        <p>No calls, no chasing. Fill in one form and we do the rest.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <h3>Submit your request</h3>
+          <p>Tell us your company type, services needed, and rough transaction volume. Takes under 3 minutes.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <h3>We match you</h3>
+          <p>We review your request and send it to up to 3 verified firms that are the right fit for your business.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <h3>Compare &amp; choose</h3>
+          <p>Receive quotes within 1–2 business days. Compare and pick the firm that suits your budget and needs.</p>
+        </div>
+      </div>
+      <div class="how__cta">
+        <a href="get-quotes.html" class="btn btn--primary">Start Now — It's Free</a>
+      </div>
+    </div>
   </section>
 
   <!-- SERVICES -->
@@ -76,7 +111,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M2 7l10-5 10 5v10l-10 5L2 17V7z"/><path d="M12 2v20M2 7l10 5 10-5"/></svg>
           </div>
           <h3>Bookkeeping</h3>
-          <p>Monthly bookkeeping, bank reconciliation, and management accounts. Perfect for small businesses that need clean, current records.</p>
+          <p>Monthly bookkeeping, bank reconciliation, and management accounts.</p>
           <span class="card__price">From S$150/month</span>
         </div>
 
@@ -85,7 +120,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           </div>
           <h3>GST Filing</h3>
-          <p>GST registration, quarterly F5/F8 filing, and reconciliation — fully compliant with IRAS requirements.</p>
+          <p>GST registration, quarterly F5/F8 filing, and reconciliation.</p>
           <span class="card__price">From S$200/quarter</span>
         </div>
 
@@ -94,7 +129,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
           <h3>Corporate Tax</h3>
-          <p>Form C-S and Form C filing, tax computation, and IRAS correspondence — maximising available reliefs within the law.</p>
+          <p>Form C-S and Form C filing, tax computation, IRAS correspondence.</p>
           <span class="card__price">From S$600/year</span>
         </div>
 
@@ -103,7 +138,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
           <h3>Payroll</h3>
-          <p>Monthly payroll processing, CPF submissions, IR8A preparation, and payslips — accurate and on time every month.</p>
+          <p>Monthly payroll processing, CPF submissions, IR8A, payslips.</p>
           <span class="card__price">From S$80/month</span>
         </div>
 
@@ -112,7 +147,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
           <h3>Financial Statements</h3>
-          <p>Unaudited financial statements for exempt private companies, prepared to SFRS standards and ready for ACRA filing.</p>
+          <p>Unaudited financial statements prepared to SFRS standards for ACRA filing.</p>
           <span class="card__price">From S$400/year</span>
         </div>
 
@@ -121,40 +156,28 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
           </div>
           <h3>Statutory Audit</h3>
-          <p>Referrals to ACRA-registered Public Accounting Entities for companies that require a statutory audit.</p>
+          <p>Referrals to ACRA-registered Public Accounting Entities for statutory audit.</p>
           <span class="card__price">From S$2,000/year</span>
         </div>
 
-      </div>
-    </div>
-  </section>
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>Corporate Secretarial</h3>
+          <p>Annual return, AGM resolutions, director changes, ACRA filings.</p>
+          <span class="card__price">From S$300/year</span>
+        </div>
 
-  <!-- HOW IT WORKS -->
-  <section class="how" id="how">
-    <div class="container">
-      <div class="section-header">
-        <span class="label">How It Works</span>
-        <h2>Three steps to your ideal firm</h2>
-        <p>No calls, no chasing. Just fill in one form and we do the rest.</p>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step__num">1</div>
-          <h3>Submit your request</h3>
-          <p>Tell us your company type, services needed, and rough transaction volume. Takes under 3 minutes.</p>
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Xero / QuickBooks Setup</h3>
+          <p>Cloud accounting implementation, migration, training and ongoing support.</p>
+          <span class="card__price">From S$500 one-time</span>
         </div>
-        <div class="step__arrow">→</div>
-        <div class="step">
-          <div class="step__num">2</div>
-          <h3>We match you</h3>
-          <p>We send your request to up to 3 verified accounting firms that are the right fit for your business.</p>
-        </div>
-        <div class="step__arrow">→</div>
-        <div class="step">
-          <div class="step__num">3</div>
-          <h3>Compare &amp; choose</h3>
-          <p>Receive quotes within 1–2 business days. Compare and pick the firm that suits your budget and needs.</p>
-        </div>
+
       </div>
     </div>
   </section>
@@ -175,92 +198,140 @@
         </p>
         <ul class="about__list">
           <li>Verified, Singapore-registered firms only</li>
-          <li>Free to use for businesses</li>
+          <li>100% free for businesses to use</li>
           <li>Up to 3 competitive quotes per request</li>
-          <li>Covers bookkeeping, tax, GST, payroll &amp; audit</li>
-          <li>No obligation — choose only if you're happy</li>
+          <li>Covers bookkeeping, tax, GST, payroll, audit &amp; more</li>
+          <li>No obligation — choose only if you're satisfied</li>
+          <li>Your data shared only with matched firms</li>
         </ul>
       </div>
       <div class="why__stats">
-        <div class="stat-card">
-          <span class="stat-card__number">100%</span>
-          <span class="stat-card__label">Free for businesses</span>
-        </div>
-        <div class="stat-card stat-card">
-          <span class="stat-card__number">3</span>
-          <span class="stat-card__label">Quotes per request</span>
-        </div>
-        <div class="stat-card stat-card2">
-          <span class="stat-card__number">SG</span>
-          <span class="stat-card__label">Singapore-based firms</span>
+        <div class="about__card-stack">
+          <div class="stat-card">
+            <span class="stat-card__number">100%</span>
+            <span class="stat-card__label">Free for businesses</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">3</span>
+            <span class="stat-card__label">Quotes per request</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">SG</span>
+            <span class="stat-card__label">Singapore-based firms only</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">8+</span>
+            <span class="stat-card__label">Service categories</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- QUOTE FORM -->
-  <section class="contact" id="quote">
-    <div class="container contact__inner">
-      <div class="section-header section-header--light">
-        <span class="label label--light">Get Started</span>
-        <h2>Request free quotes now</h2>
-        <p>Fill in the form below — we'll match you with up to 3 firms within 1 business day.</p>
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">FAQ</span>
+        <h2>Frequently asked questions</h2>
+        <p>Everything you need to know before getting started.</p>
       </div>
-      <form class="contact__form" id="quoteForm">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Your name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Tan" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" placeholder="jane@company.com.sg" required />
-          </div>
+      <div class="faq__grid">
+
+        <div class="faq__item">
+          <h4>Is FirmMatch SG free to use?</h4>
+          <p>Yes, completely free for businesses. You submit your request, we match you with up to 3 firms, and you receive quotes at no cost. We earn a referral fee from the firms, not from you.</p>
         </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="company">Company name</label>
-            <input type="text" id="company" name="company" placeholder="ABC Pte Ltd" />
-          </div>
-          <div class="form-group">
-            <label for="phone">WhatsApp / Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="+65 9XXX XXXX" />
-          </div>
+
+        <div class="faq__item">
+          <h4>How long does it take to receive quotes?</h4>
+          <p>Most clients receive quotes within 1–2 business days after submission. In some cases, complex requests (e.g. audit) may take up to 3 business days.</p>
         </div>
-        <div class="form-group">
-          <label for="service">Service required</label>
-          <select id="service" name="service" required>
-            <option value="">Select a service…</option>
-            <option>Bookkeeping</option>
-            <option>GST Filing</option>
-            <option>Corporate Tax</option>
-            <option>Payroll</option>
-            <option>Unaudited Financial Statements</option>
-            <option>Statutory Audit</option>
-            <option>Multiple / Not sure — tell me below</option>
-          </select>
+
+        <div class="faq__item">
+          <h4>Do I have to accept any of the quotes?</h4>
+          <p>No obligation at all. You compare the quotes and only engage a firm if you're happy with the proposal. There is no commitment required.</p>
         </div>
-        <div class="form-group">
-          <label for="message">Tell us about your business <span class="optional">(optional)</span></label>
-          <textarea id="message" name="message" rows="4" placeholder="Industry, company size, monthly transactions, any deadlines…"></textarea>
+
+        <div class="faq__item">
+          <h4>Who are the firms on your platform?</h4>
+          <p>All partner firms are Singapore-registered, verified, and have experience serving SME clients. Firms offering audit services are ACRA-registered Public Accounting Entities or Public Accountants.</p>
         </div>
-        <button type="submit" class="btn btn--primary btn--full">Request Free Quotes →</button>
-        <p class="form-note">We respect your privacy. Your details are only shared with matched firms.</p>
-      </form>
+
+        <div class="faq__item">
+          <h4>Will my information be kept confidential?</h4>
+          <p>Your details are only shared with the matched firms for quotation purposes. We do not sell your data. You can request deletion of your data at any time. See our <a href="privacy.html">Privacy Policy</a>.</p>
+        </div>
+
+        <div class="faq__item">
+          <h4>What if I need more than one service?</h4>
+          <p>No problem. You can select multiple services in your request (e.g. bookkeeping + GST + payroll). We'll match you with firms that can handle the full scope.</p>
+        </div>
+
+        <div class="faq__item">
+          <h4>Does my company need to be GST-registered?</h4>
+          <p>No. We serve both GST-registered and non-GST-registered companies. Simply indicate your GST status in the request form and we'll match accordingly.</p>
+        </div>
+
+        <div class="faq__item">
+          <h4>I'm a new company. Can I still use the platform?</h4>
+          <p>Yes. We work with newly incorporated companies and startups. Let us know in the form and we'll match you with firms experienced in onboarding new businesses.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <div>
+        <h2>Ready to find your accounting firm?</h2>
+        <p>It takes less than 3 minutes. Quotes arrive within 1–2 business days.</p>
+      </div>
+      <a href="get-quotes.html" class="btn btn--white">Get 3 Free Quotes →</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-strip" id="contact">
+    <div class="container contact-strip__inner">
+      <div class="contact-strip__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <div>
+          <span>Email us</span>
+          <a href="mailto:hello@firmmatch.sg">hello@firmmatch.sg</a>
+        </div>
+      </div>
+      <div class="contact-strip__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <div>
+          <span>WhatsApp</span>
+          <a href="https://wa.me/6591234567">+65 9123 4567</a>
+        </div>
+      </div>
+      <div class="contact-strip__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div>
+          <span>Response time</span>
+          <a>Within 1 business day</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="#" class="nav__logo footer__logo">
+      <a href="index.html" class="nav__logo footer__logo">
         <span class="logo-mark">F</span>FirmMatch <span class="logo-sg">SG</span>
       </a>
-      <p class="footer__copy">&copy; 2026 FirmMatch SG. Singapore.</p>
+      <p class="footer__copy">&copy; 2026 FirmMatch SG. Singapore. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Use</a></p>
       <div class="footer__links">
         <a href="#services">Services</a>
         <a href="#how">How It Works</a>
-        <a href="#quote">Get Quotes</a>
+        <a href="partners.html">For Firms</a>
+        <a href="get-quotes.html">Get Quotes</a>
       </div>
     </div>
   </footer>
