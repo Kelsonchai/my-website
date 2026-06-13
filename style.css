@@ -241,23 +241,25 @@ a { color: inherit; text-decoration: none; }
   border-radius: 50%;
 }
 
-.why__stats { display: flex; justify-content: center; }
+.why__stats { display: flex; justify-content: center; align-items: center; }
 
-.about__card-stack { position: relative; width: 280px; height: 280px; }
+.about__card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 240px;
+}
 
 .stat-card {
-  position: absolute;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md); padding: 22px 26px;
-  box-shadow: var(--shadow-md); min-width: 160px;
+  border-radius: var(--radius-md); padding: 20px 24px;
+  box-shadow: var(--shadow-md);
+  display: flex; align-items: center; gap: 16px;
 }
-.stat-card:nth-child(1) { top: 0; left: 0; z-index: 3; }
-.stat-card--offset      { top: 80px; left: 90px; z-index: 2; }
-.stat-card--offset2     { top: 160px; left: 50px; z-index: 1; }
 
-.stat-card__number { display: block; font-size: 2rem; font-weight: 700; color: var(--color-accent); line-height: 1; margin-bottom: 4px; }
-.stat-card__label  { font-size: .79rem; color: var(--color-muted); font-weight: 500; }
+.stat-card__number { display: block; font-size: 1.8rem; font-weight: 700; color: var(--color-accent); line-height: 1; flex-shrink: 0; }
+.stat-card__label  { font-size: .82rem; color: var(--color-muted); font-weight: 500; line-height: 1.3; }
 
 /* ── Contact / Quote Form ────────────────────────────────── */
 .contact { padding: 96px 0; background: var(--color-dark); }
