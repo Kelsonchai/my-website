@@ -52,7 +52,11 @@
         </div>
       </div>
 
-      <form class="enquiry-form" id="clientForm">
+      <form class="enquiry-form" id="clientForm" action="https://formsubmit.co/hello.firmmatchsg@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="[FirmMatch SG] New Client Enquiry" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="https://kelsonchai.github.io/my-website/thanks.html" />
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
 
         <!-- Section 1: Company Info -->
         <div class="form-section-block">
@@ -114,7 +118,7 @@
             </div>
             <div class="form-group">
               <label for="contact_email">Email Address <span class="req">*</span></label>
-              <input type="email" id="contact_email" name="contact_email" placeholder="jane@company.com.sg" required />
+              <input type="email" id="contact_email" name="_replyto" placeholder="jane@company.com.sg" required />
             </div>
           </div>
           <div class="form-row">
@@ -245,13 +249,6 @@
 
         <button type="submit" class="btn btn--primary btn--full btn--lg">Submit Request →</button>
         <p class="form-note">We'll get back to you within 1–5 business days. No spam, ever.</p>
-
-        <div id="form-success" class="form-success" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <h3>Request submitted!</h3>
-          <p>Thank you. We'll review your request and get back to you within 1–5 business days.</p>
-        </div>
-
       </form>
     </div>
   </section>

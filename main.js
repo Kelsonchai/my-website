@@ -38,116 +38,22 @@ document.querySelectorAll('.card, .stat-card, .step, .section-header, .why__text
   observer.observe(el);
 });
 
-// ── Helpers ────────────────────────────────────────────────
-function getChecked(name) {
-  return [...document.querySelectorAll(`input[name="${name}"]:checked`)].map(el => el.value).join(', ') || '—';
-}
-function getRadio(name) {
-  const el = document.querySelector(`input[name="${name}"]:checked`);
-  return el ? el.value : '—';
-}
-function val(id) {
-  const el = document.getElementById(id);
-  return el ? (el.value.trim() || '—') : '—';
-}
-function showSuccess(formId, successId) {
+// Form validation
+function requireOneChecked(formId, fieldName, message) {
   const form = document.getElementById(formId);
-  const box  = document.getElementById(successId);
-  if (form) form.style.display = 'none';
-  if (box)  box.style.display  = 'block';
-}
+  if (!form) return;
 
-// ── Client Enquiry Form ────────────────────────────────────
-const clientForm = document.getElementById('clientForm');
-if (clientForm) {
-  clientForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const services = getChecked('service');
-    if (services === '—') { alert('Please select at least one service.'); return; }
-
-    const subject = encodeURIComponent(`[FirmMatch SG] New Enquiry — ${val('company_name')}`);
-    const body = encodeURIComponent(
-`=== CLIENT ENQUIRY ===
-
-COMPANY INFORMATION
-Company Name   : ${val('company_name')}
-UEN            : ${val('uen')}
-Industry       : ${val('industry')}
-Annual Revenue : ${val('annual_revenue')}
-
-CONTACT DETAILS
-Contact Person : ${val('contact_name')}
-Email          : ${val('contact_email')}
-Phone/WhatsApp : ${val('contact_phone')}
-Preferred Via  : ${val('preferred_contact')}
-
-SERVICES REQUIRED
-${services}
-
-BUSINESS VOLUME
-Monthly Sales Invoices    : ${val('sales_invoices')}
-Monthly Purchase Invoices : ${val('purchase_invoices')}
-Monthly Bank Transactions : ${val('bank_transactions')}
-Number of Employees       : ${val('employees')}
-GST Registered            : ${getRadio('gst')}
-Deadline / Urgency        : ${val('deadline')}
-
-ADDITIONAL NOTES
-${val('notes')}
-
----
-Submitted via FirmMatch SG`
-    );
-
-    window.location.href = `mailto:hello.firmmatchsg@gmail.com?subject=${subject}&body=${body}`;
-
-    setTimeout(() => showSuccess('clientForm', 'form-success'), 1000);
+  form.addEventListener('submit', event => {
+    if (!form.querySelector(`input[name="${fieldName}"]:checked`)) {
+      event.preventDefault();
+      alert(message);
+    }
   });
 }
 
-// ── Partner Registration Form ──────────────────────────────
-const partnerForm = document.getElementById('partnerForm');
-if (partnerForm) {
-  partnerForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const services = getChecked('firm_service');
-    if (services === '—') { alert('Please select at least one service your firm offers.'); return; }
-
-    const subject = encodeURIComponent(`[FirmMatch SG] Partner Application — ${val('firm_name')}`);
-    const body = encodeURIComponent(
-`=== PARTNER APPLICATION ===
-
-FIRM PROFILE
-Firm Name      : ${val('firm_name')}
-UEN            : ${val('firm_uen')}
-Contact Person : ${val('firm_contact')}
-Email          : ${val('firm_email')}
-Phone/WhatsApp : ${val('firm_phone')}
-Website        : ${val('firm_website')}
-
-SERVICES OFFERED
-${services}
-
-FEES & CAPACITY
-Minimum Monthly Fee : ${val('min_fee')}
-Capacity            : ${val('capacity')}
-Industry Focus      : ${val('industry_focus')}
-
-AUDIT & LICENCE STATUS
-Licensed PAE         : ${getRadio('pae')}
-Provides Audit       : ${getRadio('audit_service')}
-
-ADDITIONAL NOTES
-${val('firm_notes')}
-
----
-Submitted via FirmMatch SG`
-    );
-
-    window.location.href = `mailto:hello.firmmatchsg@gmail.com?subject=${subject}&body=${body}`;
-
-    setTimeout(() => showSuccess('partnerForm', 'partner-success'), 1000);
-  });
-}
+requireOneChecked('clientForm', 'service', 'Please select at least one service.');
+requireOneChecked(
+  'partnerForm',
+  'firm_service',
+  'Please select at least one service your firm offers.'
+);
